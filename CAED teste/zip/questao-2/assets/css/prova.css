@@ -1,0 +1,694 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primario);
+  color: #000000;
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+/* =============================================
+COMP VARIAVEIS 
+============================================= */
+
+:root {
+  --cor-curso: #000000;
+  --text-on-cor-modulo: #fff;
+}
+
+.curso {
+  --cor-curso: #15ad69;
+  --text-on-cor-modulo: #fff;
+}
+
+/* ============  End of VARIAVEIS  ============= */
+
+.c-aula-container {
+  background-color: #ffffff;
+}
+
+.c-aula-container h2 {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+}
+
+.c-aula-container h3 {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+}
+
+.c-aula-container h4 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+p > a {
+  font-size: inherit !important;
+}
+
+/* =============================================
+COMP ATENCAO
+============================================= */
+
+.box-dica {
+  border: 1px solid var(--cor-curso);
+  padding: 10px;
+}
+
+.box-atencao {
+  border: 1px solid var(--cor-curso);
+  padding: 38px;
+}
+
+.titulo-atencao {
+  color: var(--cor-curso);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.texto-atencao {
+  color: var(--cor-curso) !important;
+  font-weight: 700 !important;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+/* FIM   /*
+
+/* =============================================
+COMP caed-popover-1.0                   =
+============================================= */
+
+.caed-popover {
+  font-size: 14px;
+  margin: 0 4px;
+  position: relative;
+}
+
+.caed-popover.abaixo .caed-popover-body {
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: none;
+  font-size: 13px;
+  left: 0;
+  padding: 16px;
+  position: absolute;
+  top: 32px;
+  width: 320px;
+  z-index: 1;
+}
+
+.caed-popover.acima .caed-popover-body {
+  background-color: #ffffff;
+  border-radius: 2px;
+  bottom: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: none;
+  font-size: 13px;
+  left: 0;
+  padding: 16px;
+  position: absolute;
+  width: 320px;
+  z-index: 1;
+}
+
+.caed-popover.esquerda .caed-popover-body {
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: none;
+  font-size: 13px;
+  left: -300px;
+  padding: 16px;
+  position: absolute;
+  top: -50%;
+  width: 320px;
+  z-index: 1;
+}
+
+.caed-popover.direita .caed-popover-body {
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: none;
+  font-size: 13px;
+  padding: 16px;
+  position: absolute;
+  right: -300px;
+  top: -50%;
+  width: 320px;
+  z-index: 1;
+}
+
+.caed-popover button:focus + .caed-popover-body {
+  display: block;
+}
+
+.caed-popoverbutton + .caed-popover-body {
+  display: block;
+}
+
+.caed-popover button, .caed-popover a {
+  background-color: #fff !important;
+  /*border: 1px solid var(--cor-curso) !important;*/
+  color: #fff !important;
+  font-size: 14px;
+  margin-top: -2px;
+  padding: 0 6px;
+}
+
+.caed-popover button:hover, .caed-popover a:hover {
+  background-color: #fff !important;
+  /*border: 1px solid var(--cor-curso) !important;*/
+  color: #000 !important;
+  font-size: 14px;
+  margin-top: -2px;
+  padding: 0 6px;
+}
+
+.caed-popover button i {
+  margin-right: 8px;
+}
+
+.caed-popover-show.caed-popover-body {
+  display: block !important;
+}
+
+/* ============  End of caed-popover-1.0  ============= */
+
+/* =============================================
+//COMP procedimentos
+============================================= */
+
+.caed-procedimentos {
+  overflow: hidden;
+  padding-right: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.caed-procedimentos::before {
+  background: #000000;
+  content: "";
+  height: 100%;
+  left: 16px;
+  margin-left: 5px;
+  margin-top: 2px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.caed-procedimentos .momento-conteudo {
+  margin-left: 48px;
+}
+
+/* COMP momentos */
+
+.momento.primeiro {
+  margin-top: 0;
+}
+
+.momento {
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  clear: both;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  margin-top: 80px;
+}
+
+.momento-marcador {
+  align-items: center;
+  background: #fff;
+  border-radius: 100px;
+  border: 2px solid #ccc;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  min-width: 32px;
+  width: 32px !important;
+  z-index: 1;
+}
+
+.momento-titulo {
+  color: #111;
+  margin: 0 !important;
+  padding: 0 15px 0 0;
+  text-transform: uppercase;
+  width: calc(100% - 48px);
+}
+
+/* COMP passos */
+
+.passo {
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  clear: both;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.passo-marcador {
+  align-items: center;
+  background: #fff;
+  border-radius: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  height: 28px;
+  justify-content: center;
+  margin: 8px;
+  min-width: 16px;
+  width: 28px !important;
+  z-index: 1;
+}
+
+.passo-titulo {
+  color: rgb(0, 0, 0);
+  margin: 0 !important;
+  padding: 0 15px 0 0;
+  width: calc(100% - 48px);
+}
+
+.passo-collapse {
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  align-items: top;
+  clear: both;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  margin-top: 48px;
+}
+
+.passo-collapse-conteudo {
+  padding: 24px 0;
+}
+
+.passo-collapse-container {
+  width: calc(100% - 48px);
+}
+
+.passo-collapse-titulo {
+  /*border-bottom: 1px solid rgb(0, 0, 0);*/
+  border-radius: 0;
+  color: rgb(0, 0, 0) !important;
+  display: block !important;
+  font-size: 20px !important;
+  padding: 5px 0 8px 0;
+  width: 100%;
+}
+
+.passo-collapse-titulo:hover {
+  color: rgb(0, 0, 0) !important;
+  display: block !important;
+  text-decoration: none !important;
+}
+
+.passo-collapse-titulo:focus {
+  box-shadow: none;
+}
+
+.passo-collapse-titulo i {
+  color: rgb(0, 0, 0);
+  margin-right: 8px;
+}
+
+.passo-collapse-titulo[aria-expanded="true"] i {
+  transform-origin: 50% !important;
+  transform: rotate(90deg);
+}
+
+/* ============  End of procedimentos  ============= */
+
+.btn-modal {
+  background-color: var(--cor-curso);
+  border-radius: 0px;
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold;
+  padding: 8px 50px !important;
+  text-decoration-color: #fff !important;
+}
+
+.btn-modal:hover {
+  color: rgb(255, 255, 255) !important;
+  filter: brightness(128%);
+  text-decoration-color: #fff !important;
+}
+
+.dicas-alinh span {
+  font-size: 12px;
+  margin-left: 5px;
+  opacity: 0.5;
+}
+
+.modal-alinh {
+  -webkit-transition: box-shadow 0.4s ease-out;
+  transition: box-shadow 0.4s ease-out;
+  background: white;
+  box-shadow: 2px 0.3px 8px rgba(128, 128, 128, 0.29);
+  box-shadow: 2px 3px 8px rgba(51, 51, 51, 0.29);
+  cursor: pointer;
+  max-width: 350px !important;
+  min-height: 88px;
+  padding: 10px 20px !important;
+  width: 100%;
+}
+
+/*  */
+
+.modal-alinh-maior {
+  -webkit-transition: box-shadow 0.4s ease-out;
+  transition: box-shadow 0.4s ease-out;
+  background: white;
+  box-shadow: 2px 0.3px 8px rgba(128, 128, 128, 0.29);
+  box-shadow: 2px 3px 8px rgba(51, 51, 51, 0.29);
+  cursor: pointer;
+  max-width: 475px !important;
+  min-height: 88px;
+  padding: 10px 20px !important;
+  width: 100%;
+}
+
+.modal-alinh:hover {
+  -webkit-transition: box-shadow 0.4s ease-in;
+  transition: box-shadow 0.4s ease-in;
+  box-shadow: 4px 7px 11px rgba(105, 105, 105, 0.29);
+}
+
+.modal-alinh-maior:hover {
+  -webkit-transition: box-shadow 0.4s ease-in;
+  transition: box-shadow 0.4s ease-in;
+  box-shadow: 4px 7px 11px rgba(105, 105, 105, 0.29);
+}
+
+/* =============================================
+// COMP INFO-ITEM
+============================================= */
+
+.tab-pane.active {
+  padding: 50px 0 !important;
+}
+
+.info-item-img.destaque {
+  background-color: #fff !important;
+  border-radius: 0;
+  border: 2px solid var(--cor-curso);
+  box-shadow: 2px 4px 4px #bbbbbb;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.info-item .tab-pane {
+  padding-top: 16px;
+}
+
+.info-item-txt {
+  font-family: Montserrat, sans-serif;
+  font-size: 13px !important;
+}
+
+.info-item .nav-link.active {
+  align-items: center;
+  background-color: var(--cor-curso) !important;
+  border-radius: 0% !important;
+  border: none !important;
+  box-shadow: 0px 0px 8px 2px rgb(230, 230, 230);
+  color: #000 !important;
+  display: flex;
+}
+
+.info-item .nav.nav-tabs {
+  border: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-item .nav-link {
+  align-items: center;
+  background-color: #fff !important;
+  border-radius: 0% !important;
+  box-shadow: 0px 0px 8px 2px rgb(230, 230, 230);
+  color: rgb(0, 0, 0);
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  height: 40px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .info-item .nav.nav-tabs {
+    border: none;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* .nav-item {
+  width: 20% !important;
+} */
+
+/* @media screen and (max-width: 768px) {
+  
+  .info-item .nav-item {
+    margin-top: 8px;
+    width: 48%;
+    
+    /*
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .info-item .nav-link {
+    height: 32px;
+  }
+}
+
+.info-item-icon-first {
+  background-color: transparent !important;
+  color: #00b5fd;
+}
+
+.info-item .nav-link:focus, .info-item .nav-link:hover {
+  border-color: transparent;
+}
+
+.info-item-bg {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.info-item-dica-bg {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  padding: 8px;
+  width: 32px;
+}
+
+.info-item-icon-first {
+  color: #00b5fd !important;
+  padding-left: 0;
+}
+
+.info-matriz {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-matriz .nav.nav-tabs {
+  flex-direction: column;
+}
+
+/* =============================================
+// Prova
+============================================= */
+
+.atencao-ajuste {
+  margin: 70px 80px;
+  padding: 20px;
+  border: 3px solid #610bea; /*alterado para 3px que também corresponde a 0.2500rem (medida responsiva) e cor da linha para #610bea - |eduardo|*/
+}
+
+.atencao-ajuste-titulo {  /*Tamanho da fonte para 18px (1,13 rem ou em) e  Cor da fonte para #610bea |eduardo|*/
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #610bea;
+}
+
+.atencao-ajuste-texto {  /*O entrelinhas para 30px(1,88 rem) - Comentar a linha do letter-spacing - Cor da fonte para #610bea - Tamanho da fonte para 14px |eduardo|*/
+  font-size: 14px;
+  color: #610bea;
+  /*letter-spacing: 1px;*/  
+  line-height: 30px;
+}
+
+
+
+/* =============================================
+// Fim Prova
+============================================= */
+
+/* =============================================
+// COMP INFOPILHA
+============================================= */
+
+.espaco-menor {
+  height: 30px;
+}
+
+.espaco-menor-02 {
+  height: 10px !important;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+/* =============================================
+// COMP bullets check
+============================================= */
+
+.c-bullets-check {
+  list-style: none;
+  list-style-position: inside;
+  line-height: 1,2!important;
+}
+
+.c-bullets-check li {
+  margin-bottom: 20px;
+  line-height: 1,2!important;
+}
+
+.c-bullets-check li::before {
+  content: url('https://recursos-moodle.caeddigital.net/projetos/2022/parc/img/check2.svg');
+  color: #000;
+  font-size: 20px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul.c-bullets-check {
+  padding-left: 3rem!important;
+}
+
+/* =============================================
+// 
+============================================= */
+
+/* =============================================
+// COMP bullets check VERDE
+============================================= */
+
+.c-bullets-verde {
+  list-style: none;
+  list-style-position: inside;
+  line-height: 1,2!important;
+}
+
+.c-bullets-verde li {
+  margin-bottom: 20px;
+  line-height: 1,2!important;
+  color: #15ad69!important;
+}
+
+.c-bullets-verde li::before {
+  content: url('https://recursos-moodle.caeddigital.net/projetos/2022/pa/img/check-verde.svg');
+  color: #15ad69!important;
+  font-size: 20px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul.c-bullets-verde {
+  padding-left: 3rem!important;
+}
+
+/* =============================================
+// 
+============================================= */
+
+.caed-popover1-2-icon {
+  color: #000;
+  font-size: 36px;
+}
+
+.popover-teste {
+  background-color: #fff !important;
+  box-shadow: 2px 3px 8px rgba(51, 51, 51, 0.29) !important;
+  border: none !important;
+  -webkit-transition: box-shadow .4s ease-out;
+  color: #000 !important;
+  padding: 0 6px;
+  font-size: 14px;
+  margin-top: -2px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.popover-teste:hover {
+  background-color: #fff !important;
+  box-shadow: 4px 7px 11px rgba(105, 105, 105, 0.29) !important;
+  -webkit-transition: box-shadow .4s ease-in !important;
+  color: var(--cor-curso) !important;
+  padding: 0 6px;
+  font-size: 14px;
+  margin-top: -2px;
+  border: 2px solid #000 !important;
+}
+
+.popover-teste:focus {
+  border: 2px solid #000 !important;
+}
+
+/* ============  End of caed-popover-1.2  ============= */
+
+.separador-collapse {
+  border-bottom: 0.5px solid;
+  height: 30px;
+}
+
+/* ============  Tabelas  ============= */
+
+.tabelas-2022 th, .tabelas-2022 td {
+  border: 2px solid #000!important;
+  vertical-align: middle;
+}
+

@@ -1,0 +1,1 @@
+A função auto layout não foi totalmente aplicada

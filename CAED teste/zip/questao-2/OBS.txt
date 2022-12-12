@@ -1,0 +1,2 @@
+
+<!-- Modal não ficou completo por aqui, porem criei um outro html como nome de modal.html com o modal bem mais simples feito apenas em html e css usando a tag <dialog> sem necessidade de div--> 
